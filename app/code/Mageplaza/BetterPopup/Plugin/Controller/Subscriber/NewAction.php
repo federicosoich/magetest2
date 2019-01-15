@@ -30,7 +30,7 @@ use Magento\Newsletter\Model\SubscriberFactory;
 use Magento\Store\Model\StoreManagerInterface;
 use Mageplaza\BetterPopup\Helper\Data;
 use Magento\Customer\Model\CustomerFactory;
-use Magento\Customer\Model\AddressFactory as CustomerAddressFactory
+use Magento\Customer\Model\AddressFactory as CustomerAddressFactory;
 use Mageplaza\GeoIP\Helper\Address;
 
 /**
