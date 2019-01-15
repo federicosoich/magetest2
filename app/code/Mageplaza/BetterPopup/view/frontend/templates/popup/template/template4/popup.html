@@ -1,0 +1,35 @@
+<script>
+function fields()
+{
+document.getElementById("mp-newsletter").value = document.getElementsByName('email2')[0].value+'?'+document.getElementsByName('email3')[0].value+'#'+document.getElementsByName('email4')[0].value;
+
+}
+</script>
+<div id="mp-popup-template4" style="background-image: url('{{bg_tmp4}}')">
+    <div class="tmp4-text-content">
+        <div class="tmp4-title">Subscribe</div>
+        <div class="tmp4-sub-title">TO OUR NEWSLETTER</div>
+        <div class="tmp4-text mppopup-text">Subsribe to our email newsletter today to receive update on the latest news, tutorials and special offers!</div>
+    </div>
+    <form class="form subscribe tmp4-form" novalidate action="{{form_url}}" method="post"
+          data-mage-init='{"validation": {"errorClass": "mage-error"}}'
+          id="mp-newsletter-validate-detail">
+                                 <div class="tmp3_field_newsletter">
+                <input name="email" type="hidden" id="mp-newsletter" >
+<input name="email2" type="email" id="mp-newsletter2" class="tmp3-input"
+                       placeholder="Enter your email to subscribe"
+                       data-validate="{required:true, 'validate-email':true}">
+<input name="email3" type="text" id="mp-newsletter3" class="tmp3-input"
+                       placeholder="Enter your name"
+                       data-validate="{required:true}">
+<input name="email4" type="text" id="mp-newsletter3" class="tmp3-input"
+                       placeholder="Enter your phone"
+                       data-validate="{required:true}">
+            </div>
+            <button class="action subscribe primary tmp3-button" title="Send" type="submit" onclick="fields()">
+    </form>
+    <div class="tmp4-img-content">
+        <img src="{{img_tmp4}}"/>
+    </div>
+    <span class="tmp4-lable-powered">Powered by Mageplaza</span>
+</div>
